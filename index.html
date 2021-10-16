@@ -3,8 +3,21 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <img src="asdf" alt="Alt tekst" class="wrongImage" />
-    <button onclick="myFunction()">Nadaj atrybut</button>
-    <script></script>
+    <img src="asdf" alt="Alt tekst" id="wrongImage" />
+
+    <button onclick="myFunction()">wstaw pieska</button>
+
+    <script>
+      function myFunction() {
+        var img = document.getElementById('wrongImage');
+
+        var myImage = document.createAttribute('src');
+
+        myImage.value =
+          'https://sii.pl/wp-content/themes/sii-sage/resources/assets/images/logo-sii.png';
+
+        img.attributes.setNamedItem(myImage);
+      }
+    </script>
   </body>
 </html>
