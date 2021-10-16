@@ -3,7 +3,16 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-  <a data='data1' href="https://www.gazeta.pl/0,0.html" target="_blank">link</a>
-  <a data='data2' href="https://www.gazeta.pl/0,0.html" target="_blank">link</a>
+    <h1>hello world!</h1>
+    <h1>hello world2!</h1>
+    <button onclick="myFunction()">Nadaj atrybut</button>
+    <script>
+      function myFunction() {
+        var h = document.getElementsByTagName('h1')[0];
+        var typ = document.createAttribute('title');
+        typ.value = 'Test title';
+        h.attributes.setNamedItem(typ);
+      }
+    </script>
   </body>
 </html>
