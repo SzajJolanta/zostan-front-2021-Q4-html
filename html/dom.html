@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>hello world!</h1>
+    <h1>hello world2!</h1>
+    <button onclick="myFunction()">Nadaj atrybut</button>
+    <script>
+      function myFunction() {
+        var h = document.getElementsByTagName('h1')[0];
+        var typ = document.createAttribute('title');
+        typ.value = 'Test title';
+        h.attributes.setNamedItem(typ);
+      }
+    </script>
+  </body>
+</html>
