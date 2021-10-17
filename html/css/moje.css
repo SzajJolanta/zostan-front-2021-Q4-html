@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkseagreen;
+}
+p {
+    color:blue;
+}
+#spanID {
+    color:red;
+}
+#cos {
+    color:darkgreen;
+    font-size: x-small;
+}
+
+p::selection{
+    font-size: xx-large;
+    font-style: italic;
+}

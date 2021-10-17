@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "wynik"></p>
+    <p id = "wynikR"></p>
+    <p id = "wynikRandom"></p>
+    <script>
+        var tablicaLiczb = [];
+        var text ="";
+        var textR ="";
+        var textRandom ="";
+        var liczba, rand, fl;
+        for(var i=0;i<6;){
+            rand= Math.random();
+            textRandom += rand + ", ";
+            fl = 48*rand;
+            textR += fl +", ";
+            liczba = 1 + Math.floor(fl);
+            //console.log(liczba);
+            if(tablicaLiczb.indexOf(liczba)==-1){
+                i++;
+            tablicaLiczb[i] = liczba;
+            text += tablicaLiczb[i] + ", ";
+        }
+        }
+        //document.getElementById("wynik").innerHTML = text;
+        //document.getElementById("wynikRandom").innerHTML = textRandom;
+        document.getElementById("wynikR").innerHTML = tablicaLiczb;
+    </script>
+</body>
+</html>

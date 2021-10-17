@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "wynik"></p>
+    <p id = "wynikR"></p>
+    <p id = "wynikRandom"></p>
+    <script>
+    //    var b =true;
+    //    var a = false;
+    //    if (a == b) {
+    //     document.getElementById("wynik").innerHTML = "PRAWDA";
+    // } else {
+    //     document.getElementById("wynik").innerHTML = "FAŁSZ !!!";
+    // }
+    var a ="Poniedziałek";
+    var typDnia = "";
+        switch(a) {
+
+            case "Poniedziałek":
+            {typDnia = "roboczy"; var a = 7;}
+            break;
+            case "Sobota":
+                typDnia = "wolny";
+                break;
+            case "Niedziela":
+                typDnia = "wolny";
+                break;
+            default:
+                typDnia = "inny";
+        }
+
+        function mnozenie(a,b){
+            return a*b;  
+        }
+        function dzielenie(a, b){
+            if (b==0){
+                return "Nie dziel przez zero!!!";
+            }
+            return a/b;
+        }
+        function dzT(a,b){
+            var res;
+            try {
+                res = a/b;
+            } catch (error) {
+                res = "Error /0";
+                console.log(error);
+            } finally {
+                return res;
+            } 
+        }
+        var x = mnozenie(2,7);
+        var g = dzT(5, 0);
+        document.getElementById("wynikRandom").innerHTML = typDnia;
+        document.getElementById("wynikR").innerHTML = g;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Przykład</title>
+</head>
+
+<body>
+<div id="container"><p>Kontener z zawartością strony</p>
+  <div id="header">
+    <h3>Nagłowek</h3>
+  </div>
+  <div id="mainPanel">
+  <img src="asdfimg/WebApp.PNG" alt="Architektura aplikacji Web" title="Web App architecture">
+  <hr>
+  <p id="podpis">podpis pod obrazem</p>
+ </div>
+  <div id="footer">&copy;Kurs Front-end, 2020</div>
+  <script>
+    window.innerHeight = 100;
+    document.getElementById("mainPanel").style.height = 20;
+    document.getElementById("podpis").innerHTML = "Podpis pod obrazkiem"
+  </script>
+</div>
+</body>
+</html>
+

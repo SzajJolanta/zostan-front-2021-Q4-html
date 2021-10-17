@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Strona z formularzem</title>
+<style>
+   input:required{
+    background-color: rgba(255, 219, 219, 0.89);
+  }
+  input:hover {
+    background-color: rgb(201, 235, 223);
+  }
+  input:focus {
+    background-color: mediumaquamarine;
+  } 
+ 
+</style>
+</head>
+
+<body>
+<form action="odebranoFormularz.html" method="get" enctype="application/x-www-form-urlencoded">
+<h4>Podaj dane: </h4>
+<label>Imię:     <input name="imie" type="text" size="25" maxlength="30" required></label><br>
+<label>Nazwisko: <input name="nazwisko" type="text" size="25" maxlength="30"></label><br>
+<label>e-mail: <input name="e-mail" type="email" size="25" maxlength="30" ></label><br>
+<label>hasło: <input name="pswd" type="password" size="25" maxlength="30" ></label><br>
+<label>płeć<br><label>M <input name="plec" type="radio" value="M" checked></label><label>K <input name="plec" type="radio" value="K"></label></label><br>
+<label>Województwo<select name="woj">
+  <option value="DSL">dolnośląskie</option>
+  <option value="MAZ">mazowieckie</option>
+  <option value="POM">pomorskie</option>
+</select></label>
+<br>
+<input name="OK" type="submit" value="Wyślij">
+
+<input type="hidden" name="ukrytyParam" value="00" />
+</form>
+</body>
+</html>
+
+
