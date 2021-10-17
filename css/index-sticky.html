@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid cornflowerblue;
+}
+</style>
+</head>
+<body>
+
+<p>Obszar jest zdefiniowany z padding:bottom:2000px.  <b>Przewiń</b> stronę by sprawdzić zachowanie elementu
+    z włąściwością position:sticky.</p>
+<p>IE/Edge 15 i wersje wcześniejsze nie obsługują position:sticky.</p>
+
+<div class="sticky">Jestem elementem "lepkim"!</div>
+
+<div style="padding-bottom:2000px">
+  <p>W przykładzie, elemet div jest umieszczany na górze strony (top: 0), w momencie scrollowania.</p>
+  <p>Aby usunąć przyleganie (stickyness) przewiń stronę do góry.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, 
+      altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. 
+      Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. 
+      Eum no molestiae voluptatibus.</p>
+  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, 
+      altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum.
+       Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. 
+       Eum no molestiae voluptatibus.</p>
+</div>
+
+</body>
+</html>

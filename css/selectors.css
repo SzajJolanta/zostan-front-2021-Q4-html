@@ -1,0 +1,57 @@
+p {
+    
+    font-size: 12px;
+  }
+
+#pid
+{
+    text-align: center;
+    color: darkred;
+    font-size: 14px;    
+}
+
+.center {
+    text-align: center;
+    color: red;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+p.center {
+    text-align: center;
+    color: darkslategray;
+    font-size: 15px;
+    font-style: italic;  
+}  
+
+* {
+    text-align: center;
+    color: blue;
+  }
+
+  h3, h4, p {
+    text-align: center;
+    color: darkblue;
+  } 
+
+
+  div {
+    background: rgba(0, 160, 0, 0.2) /* Green background with 20% opacity */
+  }
+
+  body {
+    background-image: url("texture.gif");
+  }
+
+  body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+  }
+
+  body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll; /* lub fixed */
+  }
+

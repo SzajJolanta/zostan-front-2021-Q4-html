@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+span:first-child {
+  font-size:large;
+} 
+input:not(:in-range) {
+      border: 5px solid red;
+}
+span::selection, p::selection{
+      background-color: rgba(128,255,128);
+}
+p::first-letter {
+      font-size: xx-large;
+}
+</style>
+</head>
+<body>
+<input type="number" min="7" max="15" value="8">
+<p><span>Lorem</span> ipsum dolor sit amet, <span>illum definitiones no quo, </span>maluisset concludaturque et eum, 
+      altera fabulas ut quo. Atqui ...</p>
+<p><span>Lorem</span> ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, 
+      altera fabulas ut quo. Atqui ...</p>
+<p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, 
+            altera fabulas ut quo. Atqui ...</p>
+</body>
+</html>
+

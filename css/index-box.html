@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ div {
+    width: 300px;
+    border: 7px solid #4c75a3;
+    padding: 50px;
+    margin: 20px;
+  } 
+
+p.text {
+  text-align:center;
+  letter-spacing:3px;
+}
+p.comment {
+    text-align:center;
+    font-variant: small-caps;
+    padding:0px;
+    margin:0px;
+}
+p.commentwhite {
+    text-align:center;
+    font-variant: small-caps;
+    color:azure;
+    padding:0px;
+    margin:0px;
+}
+.margin {
+    background-color: rgb(247, 247, 247);
+    padding:20px;
+    border:dashed #4c75a3 thin;
+}
+.border {
+    background-color: #4c75a3;
+    padding: 20px;
+    /*border-left:20px #4c75a3;
+    border-right:20px #4c75a3;
+    border-bottom:20px #4c75a3;
+    */
+}
+.padding {
+    background-color:whitesmoke;
+    padding:20px;
+}
+.content {
+    background-color:wheat;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="margin"> <p class="comment">margin</p>
+    <div class="border"> <p class="commentwhite">border</p>
+        <div class="padding"> <p class="comment">padding</p>
+            <div class="content">
+                <p class="comment">Tekst (content)</p>
+            </div><p></p>
+        </div><p></p>
+    </div><p></p>
+</div>
+
+</body>
+</html>
