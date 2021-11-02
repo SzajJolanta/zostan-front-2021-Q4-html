@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <script src="test.js" ></script> -->
+  </head>
+  <body>
+      <div id="result">0</div>
+        <button onclick="myFunction()">Increment</button>
+        <script>
+          function myFunction(){
+              let res = document.getElementById('result').innerHTML;
+              res++;
+              innerFunction(res);
+          }
+
+          function innerFunction(value){
+            document.getElementById('result').innerHTML = value;
+              if(value > 10){
+                document.getElementById('result').classList.add("warning")
+              }
+          }
+  
+      </script>
+  </body>
+</html>
