@@ -1,0 +1,9 @@
+{
+    "name": "kurs-front",
+    "version": "0.1.0",
+    "license": "AFG",
+    "description": "Nasza kursowa aplikacja",
+    "dependencies": {
+        "request": "2.88.2"
+    }
+}
