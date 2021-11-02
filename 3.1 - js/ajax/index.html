@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Description" />
+  <meta charset="utf-8">
+  <title>Kurs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Pobrana tresc strony</h1>
+    <div id="container">
+        Loading...
+    </div>
+    <script>
+        loadTXT("https://jsonplaceholder.typicode.com/posts");
+
+        function loadTXT(docName) {
+            const xhttp = new XMLHttpRequest();
+            
+            xhttp.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status === 200){
+                    setTimeout(() => {
+                        document.getElementById("container").innerHTML = this.responseText;
+                    }, 2000);
+                }
+                if(this.readyState == 4 && this.status === 404){
+                    document.getElementById("container").innerHTML = "Problem z pobraniem tresci";
+                }
+            }
+
+            xhttp.open("GET", docName, true);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
